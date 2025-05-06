@@ -9,9 +9,8 @@ import ModeToggler from './events/ModeToggler';
 import InputComponent from './components/InputComponent';
 import Homepage from './navigarion/Homepage';
 import AboutMe from './navigarion/AboutMe';
-import {Routes, Route, Link} from 'react-router-dom'
-
-
+import {Routes, Route, Link} from 'react-router-dom';
+import Login from './login/Login';
 
 const Logo = () =>{
   const userPic = <img src={logo_react} className="logo-img" alt="React Logo" />;
@@ -19,6 +18,7 @@ const Logo = () =>{
 }
 
 function App() {
+  
   return (
     <div className="App">
       <nav className='nav'>
@@ -29,6 +29,7 @@ function App() {
         <Route path='/' element={<Homepage />} />
         <Route path='about-me' element={<AboutMe />} />
       </Routes>
+      <Login />
       
       <Heading firstName="Bob" />
       <Bag>
