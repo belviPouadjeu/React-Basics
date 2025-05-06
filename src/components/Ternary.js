@@ -7,6 +7,7 @@ const Ternary = () => {
 
     return (
         <div>
+            <h3>Ternary operation</h3>
             {name === "Bob" ? "Hello Bob" : "Hello Friend"} 
             <div>
             <h1>Here's a random number from 0 to 10: {Math.floor(Math.random() * 10) + 1}</h1>
